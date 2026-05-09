@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<head>
+    <!-- Page title -->
+    <title>Animal Crossing: New Horizons</title>
+
+    <!-- Responsive design for different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS -->
+    <link rel = "stylesheet" href="gameplay.css">
+</head>
+
+<!-- Header section -->
+<header>
+    <!-- Logo -->
+    <div class = "logo">
+        <img src = "../img/nintendo.png" width = "100" height = "40">
+    </div>
+
+    <!-- Navigation bar -->
+    <div class = "color">
+        <a href = "../acnh.html">Home</a>
+        <a href = "../pages/characters.html">Characters</a>
+        <a href = "../pages/gameplay.html">Gameplay</a>
+        <a href = "../pages/tips.html">FaQs</a>
+        <a href = "../pages/merch.html">Official Store</a>
+        <a href = "../pages/reviews.html">Reviews</a>
+
+        <!-- Music button -->
+        <button id="music-btn">Play Music ▶</button>
+    </div> 
+</header>
+
+<body>
+<main>
+
+        <!-- Background music -->
+        <audio id = "bg-music" autoplay loop> 
+            <source src = "../audio/audioo.mp3" type = "audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- External JavaScript file -->
+        <script src="../acnh.js"></script>
+
+<!-- Main heading -->
+<h1><i>Gameplay</i></h1>
+
+<!-- Intro section -->
+<div class = "intro">
+
+<!-- Container for slider and text -->
+<section class = "container">
+    <div class = "showcase">
+
+    <!-- Image slider -->
+    <div class = "slider-wrapper">
+        <div class = "slider">
+
+            <!-- Slider images -->
+            <img src = "../img/img12.png" id = "slide1" alt = "A player striking a tree with a shovel">
+            <img src = "../img/img13.png" id = "slide2" alt = "Multiple players by the sea">
+            <img src = "../img/img14.png" id = "slide3" alt = "A player rolling snow">
+            <img src = "../img/img15.png" id = "slide4" alt = "A player using the vault to get over a river">
+            <img src = "../img/img16.png" id = "slide5" alt = "A player speaking to a villager">
+        </div>
+
+        <!-- Navigation dots for slider -->
+        <div class = "slider-nav">
+            <a href = "#slide1"></a>
+            <a href = "#slide2"></a>
+            <a href = "#slide3"></a>
+            <a href = "#slide4"></a>
+            <a href = "#slide5"></a>
+        </div>
+    </div>
+
+    <!-- Intro description -->
+    <p>
+        Explore different activities such as fishing, bug catching, and diving 
+        as you discover the beauty and calm of island life. 
+    </p>
+</div>
+</div>
+
+        <!-- Section title -->
+        <h1>Start Your Adventure!</h1>
+
+<!-- Gameplay activities section -->
+<div class = "gameplay">
+
+<!-- Fishing section -->
+<div class = "fishing">
+    <h3><i>🐟Fishing</i></h3>
+
+    <!-- Fishing video -->
+    <video controls autoplay muted>
+        <source src = "../video/acnhcut.mp4" id = "video1" type = "video/mp4">
+        Your browser does not support the HTML video 
+    </video>
+
+    <!-- Description -->
+    <p>
+        Take a moment to relax and enjoy the peaceful art of fishing. Whether you're casting your line at sunrise or waiting patiently by the shore, every catch brings a little joy and a new discovery.
+    </p>
+</div>
+
+<!-- Bug catching section -->
+<div class = "catching">
+    <h3><i>🍎Catching</i></h3>
+
+    <!-- Bug catching video -->
+    <video controls autoplay muted>
+        <source src = "../video/bugscut.mp4" id = "video2" type = "video/mp4">
+        Your browser does not support the HTML video 
+    </video>
+
+    <!-- Description -->
+    <p>
+        Wander through the island and keep a close eye on your surroundings—bugs can appear when you least expect it.
+    </p>
+</div>
+
+<!-- Diving section -->
+<div class = "diving">
+    <h3><i>🫧Diving</i></h3>
+
+    <!-- Diving video -->
+    <video controls autoplay muted>
+        <source src = "../video/divingcut.mp4" id = "video3" type = "video/mp4">
+        Your browser does not support the HTML video 
+    </video>
+
+    <!-- Description -->
+    <p>
+       Dive beneath the ocean's surface and explore a hidden world full of mystery and rare sea creatures. As you swim deeper, keep an eye out for bubbles—each dive could lead to an exciting discovery waiting just below the waves!
+    </p>
+</div>
+
+<!-- Designing section -->
+<div class = "designing">
+    <h3><i>🍃Designing</i></h3>
+
+    <!-- Designing video -->
+    <video controls autoplay muted>
+        <source src = "../video/designing.mp4" id = "video4" type = "video/mp4">
+        Your browser does not support the HTML video 
+    </video>
+
+    <!-- Description -->
+    <p>
+        Bring your dream island to life by shaping every detail to match your style. From placing furniture and decorating outdoor spaces to building bridges, paths, and custom layouts, designing your island lets you create a peaceful world that feels uniquely yours.
+    </p>
+</div>
+</div>
+
+<!-- Second section (multiplayer, villagers, events) -->
+<div class = "second">
+
+    <!-- Multiplayer section -->
+    <div class = "multiplayer">
+        <div class = "video-box">
+
+        <!-- Multiplayer video -->
+        <video controls autoplay muted>
+            <source src = "../video/gameshow.mp4" id = "video5" type = "video/mp4">
+            Your browser does not support the HTML video  
+        </video>
+
+        <!-- Description -->
+        <p>Welcome friends into your world, explore new islands, and create memorable moments together through a relaxing and social gameplay experience.</p>
+
+        <!-- Decorative image -->
+        <img src = "../img/flowers.png" id = "flowers" width = 330 height = 220>
+
+    </div>
+</div>
+
+    <!-- Villager interaction section -->
+    <div class = "villager">
+        <div class = "video-box">
+
+        <!-- Villager video -->
+        <video controls autoplay muted> 
+            <source src = "../video/villager.mp4" type = "video/mp4">
+            Your browser does not support the HTML video 
+        </video>
+        
+        <!-- Description and link -->
+        <p>
+           Invite villagers who match your style and create a community filled with different personalities, stories, and friendships.
+            <br><br>
+            <a href = "../pages/characters.html">Meet our villagers!</a>
+        </p>
+
+        <!-- Decorative image -->
+        <img src = "../img/watering.png" id = "watering" width = 290 height = 350>
+        </div>
+    </div>
+
+    <!-- Events section -->
+    <div class = "events">
+        <div class = "video-box">
+
+            <!-- Events video -->
+            <video controls autoplay muted> 
+                <source src = "../video/newyear.mp4" type = "video/mp4">
+                Your browser does not support the HTML video 
+            </video>
+
+            <!-- Description and link -->
+            <p>
+                Enjoy a variety of seasonal events throughout the year. Join fishing tournaments and bug-off contests to test your skills, or celebrate holidays like Bunny Day, Halloween, and Toy Day with special activities and themed items.
+                <br><br>
+                <a href = "https://nookipedia.com/wiki/Schedule:New_Horizons">Check out the events calendar!</a>
+            </p>
+
+            <!-- Decorative image -->
+            <img src = "../img/dodo.png" id = "dodo" width = 300 height = 250>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>Animal Crossing: New Horizons</p>
+</footer>
+
+</body>
+

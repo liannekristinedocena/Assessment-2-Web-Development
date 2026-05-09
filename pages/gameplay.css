@@ -1,0 +1,524 @@
+
+body {
+    margin:0;
+    font-family: 'Gill Sans';
+    background-image: url("../img/leaff.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    min-height: 100vh;
+    background-size:auto;
+    filter:blur(20%);
+    font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+}
+
+
+header {
+    background-color:rgba(231, 0, 10);
+}
+
+/* Logo inside the header */
+.logo {
+    margin-left: 30px;
+}
+
+/* Header banner / color strip with background image */
+.color {
+    background-image: url(../img/header.png);
+    padding:25px;
+    text-align: center;
+}
+
+
+/*Navigation links*/
+a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+/* Hover effect for nav links */
+a:hover {
+    background-color: rgb(15, 137, 72);
+    border-radius: 20px;
+}
+
+
+.center-img {
+    display: block;
+    margin: 0 auto;
+    margin-top:100px;
+}
+
+/*Music button*/
+#music-btn {
+    padding: 8px 15px;
+    background: transparent;
+    color: #FFCF4F;
+    cursor: pointer;
+    transition: 0.3s;
+    border:none;
+    font-size: 20px;
+    font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+}
+
+/*Heading*/
+h1 {
+    color: white;
+    padding: 25px 40px;
+    text-align: center;
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    font-size: 40px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    background: rgb(211, 12, 12);
+}
+
+
+/* Flex layout for the intro section with fade-up animation */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px 0 10px 0;
+    animation: fadeUp 1s ease-out;
+}
+
+/* Fade-up keyframe animation used across multiple sections */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Intro section image */
+.intro img {
+    width: 500px;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Intro section text paragraph */
+.intro p {
+    max-width: 400px;
+    font-size: 30px;
+    line-height: 1.6em;
+    background-image:url(../img/dot2.png);
+    padding:50px;
+    border-radius:40px;
+    text-align: justify;
+    border:2px rgba(111, 54, 23, 0.825) solid;
+}
+
+
+/* Wrapper that constrains slider width */
+.container {
+    padding:2rem;
+}
+
+.slider-wrapper {
+    position:relative;
+    max-width: 40rem;
+    margin-top: 50px;
+}
+
+/* Horizontal scroll slider with snap behaviour */
+.slider {
+    display:flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+    border: 10px solid white;
+}
+
+/* Each image fills the full slider frame */
+.slider img {
+    flex: 1 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dot navigation positioned at the bottom center of the slider */
+.slider-nav {
+    display:flex;
+    column-gap:1rem;
+    position:absolute;
+    bottom: 1.25em;
+    left:50%;
+    transform: translateX(-50%);
+    z-index:1;
+}
+
+/* Individual slider nav dots */
+.slider-nav a {
+    width:0.1px;
+    height:5px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity:0.75;
+    transition: opacity ease 250ms;
+}
+
+/*SHOWCASE SECTION */
+.showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: relative;
+    animation: fadeUp 1.2s ease-out;
+}
+
+
+
+/* Row of gameplay feature cards */
+.gameplay {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+/* Fade-up animation applied to each individual gameplay card */
+.gameplay .fishing,
+.gameplay .catching,
+.gameplay .diving,
+.gameplay .designing {
+    animation: fadeUp 1.2s ease-out;
+}
+
+/* Lift effect on gameplay card hover */
+.fishing:hover,
+.catching:hover,
+.diving:hover,
+.designing:hover {
+    transform: translateY(-8px);
+    transition: 0.3s ease;
+}
+
+/* Shared styles for all four gameplay cards */
+.diving,
+.fishing,
+.catching,
+.designing {
+    padding: 20px;
+    border-radius: 15px;
+    width: 520px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    position: relative;
+    border:#fff9e5;
+    border-radius: 30px;
+}
+
+/* Videos inside gameplay cards */
+.fishing video,
+.catching video,
+.diving video,
+.designing video {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Link button inside the villager card */
+.villager a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #ffcf4f;
+    border-radius: 12px;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size:15px;
+}
+
+/* Hover state for villager link button */
+.villager a:hover {
+    background: #f5c24c;
+    transform: scale(1.05);
+}
+
+/* Paragraph text inside gameplay cards */
+.gameplay p {
+    font-size: 15px;
+    line-height: 1.6em;
+    text-align: center;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+/* Fishing card — yellow theme */
+.fishing {
+    background-color: #F5C24C;
+    border: 10px #f0b428 solid;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Bug catching card — green theme */
+.catching {
+    background-color: #a4d4a2;
+    border:10px #7cb67a solid;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Diving card — teal theme */
+.diving {
+    background-color:#8ecfca;
+    border:10px #69ada8 solid;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Island designing card — cream theme */
+.designing {
+    background-color:#fff9e5;
+    border:10px #e5dbba solid;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sub-heading size */
+h3 {
+    font-size:40px;
+}
+
+/* Override intro paragraph alignment and spacing */
+.intro p {
+    text-align: center;
+    margin:70px;
+    font-size:20px;
+}
+
+
+/* Vertical column layout with generous spacing */
+.second {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+/* Shared layout for multiplayer, villager, and events sub-sections */
+.multiplayer,
+.villager,
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeUp 1.3s ease-out;
+}
+
+/* Wide video styling for the three feature sections */
+.multiplayer video,
+.villager video,
+.events video {
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Multiplayer video box offset to the right */
+.multiplayer .video-box {
+    margin-left: 600px;
+    position: relative;
+    margin-top:100px;
+}
+
+/* Decorative flowers image positioned to the left of the multiplayer video */
+#flowers {
+    position: absolute;
+    top: 40%;
+    left: -20%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Villager video box offset to the left */
+.villager .video-box {
+    margin-right: 700px;
+    position: relative;
+    margin-top:100px;
+}
+
+/* Decorative watering image positioned to the right of the villager video */
+#watering {
+    position: absolute;
+    top: 20%;
+    left: 120%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Events video box offset to the right */
+.events .video-box {
+    margin-left: 550px;
+    position:relative;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+/* Decorative dodo image positioned to the right of the events video */
+#dodo {
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Second h1 rule (same values, kept as-is) */
+h1 {
+    margin-top: 50px;
+    color: white;
+    padding: 25px 40px;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    font-size: 40px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    background: rgb(211, 12, 12);
+}
+
+/* Link button inside the events section */
+.events a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #ffcf4f;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+/* Hover state for events link button */
+.events a:hover {
+    background-color: #f5c24c;
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: rgba(231, 0, 10);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding:5px;
+    font-size: 15px;
+}
+
+
+
+/* Fixed-width container for feature videos */
+.video-box {
+    position: relative;
+    width: 650px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Video inside the box with a white border */
+.video-box video {
+    width: 100%;
+    display: block;
+    border: 10px #f8f8f0 solid;
+}
+
+/* Re-apply centering (overrides any earlier rule) */
+.video-box {
+    margin: 0 auto;
+}
+
+/* Tooltip-style caption box below the video */
+.video-box p {
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    background: #f8f8f0;
+    color: black;
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.4em;
+    border:10px skyblue solid;
+}
+
+/* Caption position override for multiplayer video */
+.multiplayer .video-box p {
+    position: absolute;
+    bottom: 200px;
+    left: -100px;
+    width: 250px;
+}
+
+/* Caption position override for villager video */
+.villager .video-box p {
+    position: absolute;
+    bottom: 240px;
+    left: 800px;
+    width: 250px;
+}
+
+/* Caption position override for events video */
+.events .video-box p {
+    position: absolute;
+    bottom: -60px;
+    left: -100px;
+    width: 250px;
+}
+
+/* Link button inside video caption boxes */
+.video-box p a {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 0 auto;
+    background: #ffcf4f;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* ================================================
+   FOOTER (duplicate rule kept as-is)
+   ================================================ */
+footer {
+    background-color: rgba(231, 0, 10);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding:5px;
+    font-size: 15px;
+}

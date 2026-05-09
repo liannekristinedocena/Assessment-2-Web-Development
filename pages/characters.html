@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<head>
+    <!-- Title of the webpage -->
+    <title>Animal Crossing: New Horizons</title>
+
+    <!-- Makes the website responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links to the external CSS file -->
+    <link rel = "stylesheet" href="characters.css">
+</head>
+
+<!-- Header section (top part of the webpage) -->
+<header>
+    <!-- Logo container -->
+    <div class = "logo">
+        <img src = "../img/nintendo.png" width = "100" height = "40">
+
+<!--Navigation bar of my webpage. This connects all the pages with eachother-->
+    </div>
+
+    <!-- Navigation links container -->
+    <div class = "color">
+        <a href = "../acnh.html">Home</a>
+        <a href = "../pages/characters.html">Characters</a>
+        <a href = "../pages/gameplay.html">Gameplay</a>
+        <a href = "../pages/tips.html">FaQs</a>
+        <a href = "../pages/merch.html">Official Store</a>
+        <a href = "../pages/reviews.html">Reviews</a>
+
+        <!--Button to play music-->
+        <button id="music-btn">Play Music ▶</button>
+    </div> 
+</header>
+
+<body>
+<main>
+
+    <!-- Main page heading -->
+    <h1><i>Characters</i></h1> 
+
+<!--Background Music-->
+        <!-- Audio element for background music -->
+        <audio id = "bg-music" autoplay loop> 
+            <source src = "../audio/audioo.mp3" type = "audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+<!--Connects the external JS script to the HTML button, which plays music when clicked-->
+        <!-- External JavaScript file -->
+        <script src="../acnh.js"></script>
+
+
+<!--Intro Section that includes pictures and videos-->
+<div class = "intro">
+
+<!--A div class container that contains the first video -->
+    <div class = "whoswho">
+        <div class = "video-box">
+
+            <video 
+            controls 
+            autoplay 
+            muted> 
+
+        <source src = "../video/whos-who.mp4" type = "video/mp4">
+        Your browser does not support this HTML file
+
+            </video>
+
+        <!-- Description under the video -->
+        <p>Meet our wonderful characters here to make your island experience truly memorable.</p>
+
+        <!--Decorative images-->
+        <img src = "../img/fall.png" id = "fall" width = 330 height = 400>
+        <img src = "../img/daisymae.png" id = "daisy" width = 240 height = 330>
+
+        </div>
+    </div>
+</div>
+
+
+<!--Scrolling carousel of character images-->
+<div class = "carousel">
+
+    <!-- First image group -->
+    <div class = "group">
+        <img src = "../img/blathers1.png" class = "card">
+        <img src = "../img/kicks1.png" class = "card">
+        <img src = "../img/flick1.png" class = "card">
+        <img src = "../img/gulliver1.png" class = "card"> 
+        <img src = "../img/Brewster1.png" class = "card"> 
+        <img src = "../img/cj1.png" class = "card">
+    </div>
+
+<!--Duplicate group for seamless scrolling animation-->
+        <!-- Second group (for infinite scrolling effect) -->
+        <div aria-hidden class = "group">
+        <img src = "../img/blathers1.png" class = "card">
+        <img src = "../img/kicks.png" class = "card">
+        <img src = "../img/flick.png" class = "card">
+        <img src = "../img/gulliver1.png" class = "card"> 
+        <img src = "../img/Brewster1.png" class = "card"> 
+        <img src = "../img/cj1.png" class = "card">
+    </div>
+</div>
+
+<!-- Main featured characters section -->
+<div class = "main">
+
+    <!--Link that leads the user to the official character page when the card is clicked-->
+    <a href = "https://nookipedia.com/wiki/Tom_Nook" class = "card-link">
+
+        <!-- Tom Nook card container -->
+        <div class = "tomnook">
+
+    <!--Character description-->
+        <p><b>Tom Nook</b><br><i>May 30</i><br><br>"I'll be there with Bells on! Ho ho!"<br>A kind raccoon with a 
+            heart of gold, Tom Nook helps you get started when you first move to town by loaning you 
+            a home to live in. </p>
+
+        <!-- Character image -->
+        <img src = "../img/tomnook.png" id = "tom" width=165 height =270>
+    </div>
+</a>
+
+<!--2nd character card-->
+    <a href = "https://nookipedia.com/wiki/Isabelle" class = "card-link">
+
+    <!-- Isabelle card container -->
+    <div class = "isabelle">
+        <p><b>Isabelle</b><br><i>December 20</i><br><br>"A good attitude will always take you further than a bad habit."<br>
+        Isabelle from Animal Crossing is a kind, hardworking, and cheerful Shih Tzu who serves as the player's devoted 
+        secretary and assistant.</p>
+
+        <!-- Character image -->
+        <img src = "../img/isa.png" id = "isa">
+    </div>
+</a>
+
+<!--3rd character card-->
+    <a href = "https://nookipedia.com/wiki/Timmy_and_Tommy" class = "card-link">
+
+    <!-- Timmy & Tommy card container -->
+    <div class = "timtom">
+        <p><b>Timmy & Tommy</b><br><i>June 7</i><br><br>They are deeply loyal to Tom Nook, striving to 
+            emulate his business acumen, and are characterized by their eager, child-like dedication 
+            to service and store management. </p>
+
+        <!-- Character image -->
+        <img src = "../img/timmytommy.webp" id = "timtom">
+    </div>
+</a>
+</div>
+
+<!--Smaller character cards-->
+<div class = "characters">
+
+    <!-- Blathers card -->
+    <a href = "https://nookipedia.com/wiki/Blathers" class = "card-link">
+
+<!--Blathers-->
+    <div class = "blathers">
+        <img src = "../img/icon1.png" id = "icon1">
+        <p><b>Blathers</b><br><br>"Hooooo... WHO?! Hoo! I beg your pardon! I'm a bit of a night owl, don't you know. Drowsy in the daytime.</p>
+    </div>
+</a>
+
+    <!-- Daisy Mae card -->
+    <a href = "https://nookipedia.com/wiki/Daisy" class = "card-link">
+    <div class = "daisy">
+        <img src = "../img/icon2.png" id = "icon2">
+        <p><b>Daisy Mae</b><br><br>"Turnips, turnips! Watch 'em rise! Try to earn a nice surprise!"</p>
+    </div>
+</a>
+
+    <!-- Flick card -->
+    <a href = "https://nookipedia.com/wiki/Flick" class = "card-link">
+    <div class = "flick">
+        <img src = "../img/icon3.png" id = "icon3">
+        <p><b>Flick</b><br>"I love all bugs and their appendages! I've been traveling across all the islands looking for my soul bug—the perfect inspiration for my art!"</p>
+    </div>
+</a>
+
+    <!-- K.K Slider card -->
+    <a href = "https://nookipedia.com/wiki/K.K._Slider" class = "card-link">
+    <div class = "kkslider">
+        <img src = "../img/icon4.png" id = "icon4">
+        <p><b>K.K Slider</b><br><br>"I don't ask for much. A stool to sit on, a song to sing, and some folks gathered 'round to hear it."</p>
+    </div>
+</a>
+
+    <!-- Celeste card -->
+    <a href = "https://nookipedia.com/wiki/Celeste" class = "card-link">
+    <div class = "celeste">
+        <img src = "../img/icon5.png" id = "icon5">
+        <p><b>Celeste</b><br><br>"So many shooting stars tonight! Would you care to watch nature's most beautiful performance with me?"</p>
+    </div>
+</a>
+
+    <!-- Redd card -->
+    <a href = "https://nookipedia.com/wiki/Redd" class = "card-link">
+    <div class = "reed">
+        <img src= "../img/icon6.png" id = "icon6">
+        <p><b>Reed</b><br><br>"I can already tell we're gonna be pals. No, not pals...family!"</p>
+    </div>
+</a>
+
+    <!-- Decorative images at the bottom -->
+    <img src = "../img/harvey.png" id = "img2">
+    <img src = "../img/leif.png" id = "img3">
+</div>
+
+<!-- Call-to-action button -->
+<div class = "button">
+    <a href = "../pages/merch.html">Meet more of our villagers!</a>
+</div>
+
+</main>
+
+<!-- Footer section -->
+<footer>
+    <p>Animal Crossing: New Horizons</p>
+</footer>
+
+</body>

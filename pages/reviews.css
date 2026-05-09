@@ -1,0 +1,160 @@
+/* Body styling */
+body{ 
+    margin:0;
+    font-family: 'Gill Sans';
+    background-image: url(../img/leaf.jpg);
+    font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+}
+
+/* Header bar */
+header { 
+    background-color:rgba(231, 0, 10); 
+}
+
+/* Logo positioning */
+.logo { 
+    margin-left: 30px; 
+}
+
+/* Navigation container */
+.color { 
+    background-image: url(../img/header.png);
+    padding:25px; 
+    text-align: center;
+}
+
+/* Default link styling */
+a { 
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 10px; 
+    transition: 0.3s;
+} 
+
+/* Hover effect for links inside .color */
+.color a:hover { 
+    background-color: rgb(15, 137, 72);
+    border-radius: 20px; 
+}
+
+/* Music button styling */
+#music-btn { 
+    padding: 8px 15px;
+    background: transparent;
+    color: #FFCF4F;
+    cursor: pointer;
+    transition: 0.3s;
+    border:none;
+    font-size: 20px;
+    font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+}
+
+/* Grid layout for reviews */
+.grid { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Main heading style */
+h1{ 
+    color: white;
+    padding: 25px 40px;
+    text-align: center;
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;       
+    font-size: 40px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    background: rgb(211, 12, 12); 
+}
+
+/* Review container */
+.review {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+/* Review text box */
+.review p{
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    max-width: 500px;
+    position: relative;
+    text-align: justify;
+    line-height:1.5em;
+}
+
+/* Speech bubble triangle */
+.review p::before{ 
+    content: ""; 
+    position: absolute; 
+    left: -10px; 
+    top: 30px; 
+    width: 20px; 
+    height: 20px; 
+    background: rgba(255, 255, 255, 0.9); 
+    transform: rotate(45deg); 
+}
+
+/* Button inside review */
+.review a {
+    display: inline-block;
+    background-color: #FFCF4F;
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: black;
+}
+
+/* Hover effect for review button */
+.review a:hover {
+    background-color: #e6b93f;
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered animation delays */
+.review:nth-child(1) { animation-delay: 0.1s; }
+.review:nth-child(2) { animation-delay: 0.2s; }
+.review:nth-child(3) { animation-delay: 0.3s; }
+.review:nth-child(4) { animation-delay: 0.4s; }
+.review:nth-child(5) { animation-delay: 0.5s; }
+.review:nth-child(6) { animation-delay: 0.6s; }
+
+/* Extra hover effect for links */
+.review a:hover {
+   text-decoration: underline;
+   border:10px #e6b93f solid; 
+   border-radius: 10px;
+   transform: translateY(-5px);
+}
+
+/* Footer styling */
+footer{ 
+    background-color: rgba(231, 0, 10);  
+    color: rgb(255, 255, 255); 
+    text-align: center;
+    padding:5px;
+    font-size: 15px;
+}

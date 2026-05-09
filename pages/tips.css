@@ -1,0 +1,167 @@
+/* Page body styling */
+body {
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+    background-image: url(../img/pink.jpg);
+    background-size: cover;       
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+/* Header bar */
+header { 
+    background-color:rgba(231, 0, 10); 
+}
+
+/* Logo spacing */
+.logo { 
+    margin-left: 30px; 
+}
+
+/* Navigation/header background area */
+.color { 
+    background-image: url(../img/header.png);
+    padding:25px; 
+    text-align: center;
+}
+
+/* Navigation links */
+.color a { 
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 10px; 
+    transition: 0.3s;
+} 
+
+/* Hover effect for nav links */
+.color a:hover { 
+    background-color: rgb(15, 137, 72);
+    border-radius: 20px; 
+}
+
+/* Music button styling */
+#music-btn { 
+    padding: 8px 15px;
+    background: transparent;
+    color: #FFCF4F;
+    cursor: pointer;
+    transition: 0.3s;
+    border:none;
+    font-size: 20px;
+    font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+}
+
+/* Main heading */
+h1 { 
+    color: white;
+    padding: 25px 40px;
+    text-align: center;
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;       
+    font-size: 40px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    background: rgb(211, 12, 12); 
+}
+
+/* FAQ section container */
+.faq {
+    width: 60%;
+    margin: 70px auto;
+    font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+}
+
+/* Individual FAQ card */
+.faq-item {
+    background: rgba(255, 255, 255, 0.85);
+    border: 2px solid #b8e0a5;
+    border-radius: 20px;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Hover effect for FAQ cards */
+.faq-item:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* FAQ question styling */
+.faq-item h3 {
+    margin: 0;
+    color: #2f5d3a;
+    font-size: 20px;
+    position: relative;
+}
+
+/* Leaf icon next to question */
+.faq-item h3::after {
+    content: "🌿";
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s;
+}
+
+/* Leaf animation on hover */
+.faq-item:hover h3::after {
+    transform: rotate(20deg);
+}
+
+/* FAQ answer (hidden by default) */
+.faq-item p {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    line-height: 1.6em;
+    color: #444;
+}
+
+/* Show answer on hover */
+.faq-item:hover p {
+    opacity: 1;
+    max-height: 200px;
+    margin-top: 10px;
+}
+
+/* Button link styling */
+.button a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #ffcf4f;
+    border-radius: 12px;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size:25px;
+}
+
+/* Button hover effect */
+.button a:hover {
+    background: #f5c24c;
+    transform: scale(1.05);
+    border-radius: 12px;
+    color: black;
+}
+
+/* Center button container */
+.button { 
+    text-align: center;
+}
+
+/* Footer styling */
+footer{ 
+    background-color: rgba(231, 0, 10);  
+    color: rgb(255, 255, 255); 
+    text-align: center;
+    padding:5px;
+    font-size: 15px;
+}
