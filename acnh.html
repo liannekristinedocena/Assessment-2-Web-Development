@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<head>
+    <!-- Page title shown in browser tab -->
+    <title>Animal Crossing: New Horizons</title>
+
+    <!-- Responsive layout for different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS file -->
+    <link rel = "stylesheet" href="acnh.css">
+</head>
+
+<!-- Header section (navigation + logo) -->
+<header>
+    <!-- Logo -->
+    <div class = "logo">
+        <img src = "img/nintendo.png" width = "100" height = "40">
+    </div>
+
+    <!-- Navigation bar -->
+    <div class = "color">
+        <a href = "acnh.html">Home</a>
+        <a href = "pages/characters.html">Characters</a>
+        <a href = "pages/gameplay.html">Gameplay</a>
+        <a href = "pages/tips.html">FaQs</a>
+        <a href = "pages/merch.html">Official Store</a>
+        <a href = "pages/reviews.html">Reviews</a>
+
+        <!-- Music toggle button -->
+        <button id="music-btn">Play Music ▶</button>
+    </div> 
+</header>
+
+<body>
+<main>
+
+    <!-- Background video on homepage -->
+    <video autoplay muted loop id = "bg-video">
+        <source src = "video/rocky (1).mp4" type = "video/mp4">
+    </video>
+
+    <!-- Main logo image -->
+    <img src = "img/acnhlogo.png" class = "center-img" width = "400" height = "270">
+
+        <!-- Background music -->
+        <audio id = "bg-music" autoplay loop>
+            <source src = "audio/audioo.mp3" type = "audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- External JavaScript file -->
+        <script src="acnh.js"></script>
+
+<!-- Introduction section -->
+<div class = "intro">
+
+    <!-- Text box for intro description -->
+    <div class = "intro-box">
+
+    <!-- Welcome heading -->
+    <h2>Welcome to the world of Animal Crossing: New Horizons!</h2>
+
+        <!-- Intro paragraph -->
+        <p>
+            In this relaxing life simulation game, players create their own island paradise, make friends with charming villagers, and enjoy activities like fishing, decorating, and exploring. Whether you're building your dream home or simply enjoying the peaceful atmosphere, Animal Crossing offers a fun and creative escape for everyone.
+        </p>
+    </div>
+
+    <!-- Decorative side images -->
+        <img src = "img/tomnook.png" class = "side-img1" width = "300" height = "290">
+        <img src = "img/player.png" class = "side-img" width = "300" height = "290">
+</div>
+
+<!-- YouTube video section -->
+<div class = "video">
+
+    <!-- Embedded trailer 1 -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_3YNL0OWio0?si=fW2Tm3pXZ2BQCOr1"
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe>
+
+    <!-- Embedded trailer 2 -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5LAKjL3p6Gw?si=mXEb4s00AaCzR_pQ"
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe>
+</div>
+
+<!-- News section heading -->
+<h3><i>News</i></h3>
+
+<!-- News cards container -->
+<div class = "news">
+
+    <!-- News card 1 -->
+    <div class = "news1">
+        <p>GameCube Animal Crossing Returns In New Anniversary Release From Nintendo</p>
+        <img src = "img/anniv.jpg" width = 250 height = 150>
+        <a href = "https://screenrant.com/animal-crossing-gamecube-official-return/" class = "btn1">Read More</a>
+    </div>
+
+    <!-- News card 2 -->
+    <div class = "news2"> 
+        <p>Go retro with Nintendo x Animal Crossing: New Horizons crossover in-game items</p>
+        <img src = "img/retro.jpg" width = 250 height = 150>
+        <a href = "https://www.nintendo.com/au/news-and-articles/go-retro-with-nintendo-x-animal-crossing-new-horizons-crossover-in-game-items/" class = "btn2">Read More</a>
+    </div>
+
+    <!-- News card 3 -->
+    <div class = "news3">
+        <p>Out now! Welcome back to the island with updates for both Nintendo Switch and Nintendo Switch 2</p>
+        <img src = "img/nintendo.avif" width = 250 height = 150>
+        <a href = "https://www.nintendo.com/us/whatsnew/out-now-welcome-back-to-the-island-with-updates-for-both-nintendo-switch-and-nintendo-switch-2/" class = "btn3">Read More</a>
+    </div>
+</div>
+
+<!-- Decorative character image -->
+<img src = "img/redd.png" id = "redd" width = 150 height = 230>
+
+<!-- Screenshot gallery section -->
+<h3><i>In-game screenshots</i></h3>
+
+<section class = "container">
+    <div class = "showcase">
+
+    <!-- Image slider -->
+    <div class = "slider-wrapper">
+        <div class = "slider">
+
+            <!-- Screenshot images -->
+            <img src = "img/img1.png" id = "slide1" alt = "A player striking a tree with a shovel">
+            <img src = "img/img2.png" id = "slide2" alt = "Multiple players by the sea">
+            <img src = "img/img3.png" id = "slide3" alt = "A player rolling snow">
+            <img src = "img/img4.png" id = "slide4" alt = "A player using the vault to get over a river">
+            <img src = "img/img5.png" id = "slide5" alt = "A player speaking to a villager">
+            <img src = "img/img6.png" id = "slide6" alt = "A player paving a path"> 
+            <img src = "img/img7.png" id = "slide7" alt = "A player looking at spotted garden eels in the museum">
+        </div>
+
+        <!-- Slider navigation dots -->
+        <div class = "slider-nav">
+            <a href = "#slide1"></a>
+            <a href = "#slide2"></a>
+            <a href = "#slide3"></a>
+            <a href = "#slide4"></a>
+            <a href = "#slide5"></a>
+            <a href = "#slide6"></a>
+            <a href = "#slide7"></a>
+        </div>
+    </div>
+
+    <!-- Character image beside description -->
+        <img src = "img/kkslider.png" id = "kk" width = 220 height = 295>
+
+    <!-- Description box -->
+    <div class = "desc">
+        <p>
+            From fishing to catching a multitude of animals, create your very own dream vacation with your friends and meet new villagers in Nintendos Animal Crossing: New Horizons!
+        </p>
+
+        <!-- Link to store page -->
+        <a href = "pages/merch.html">Head to our Official Store</a>
+    </div>
+</div>
+</section>
+
+<!-- Grid gallery section -->
+<div class = "grid">
+
+    <!-- Grid images -->
+    <img src = "img/img8.jpg" id = "img8" alt = "Player standing on bridge in island"> 
+    <img src = "img/img9.jpg" id = "img9" alt = "A group of players sitting around a table">
+    <img src = "img/img10.jpg" id = "img10" alt = "A player and a villager looking at the night sky">
+    <img src = "img/img11.jpg" id = "img11" alt = "A player picking between tools">
+</div>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>Animal Crossing: New Horizons</p>
+</footer>
+
+</body>
